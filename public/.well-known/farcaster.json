@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "KRYCE Navigator",
+    "subtitle": "Built with Zara",
+    "description": "KRYCE Navigator is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://a530bc9d332c4e9392521d93d5eb26ff-5pyf.vercel.app",
+    "splashImageUrl": "https://a530bc9d332c4e9392521d93d5eb26ff-5pyf.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://a530bc9d332c4e9392521d93d5eb26ff-5pyf.vercel.app/image.png",
+    "tagline": "KRYCE Navigator",
+    "screenshotUrls": [
+      "https://a530bc9d332c4e9392521d93d5eb26ff-5pyf.vercel.app/screenshot.png",
+      "https://a530bc9d332c4e9392521d93d5eb26ff-5pyf.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://a530bc9d332c4e9392521d93d5eb26ff-5pyf.vercel.app/api/webhook"
+  }
+}
