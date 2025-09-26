@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* KRYCE Theme - Warm Social with Dark Teal & Coral */
+  --color-bg: 184 91% 17%; /* Dark teal background */
+  --color-fg: 0 0% 95%; /* Light text */
+  --color-accent: 0 79% 70%; /* Coral accent (#ff6b6b) */
+  --color-surface: 184 91% 22%; /* Slightly lighter teal surface */
+  --color-muted: 0 0% 70%; /* Muted text */
+  --color-primary: 210 100% 50%; /* Blue primary */
+}
+
+[data-theme="celo"] {
+  --color-bg: 0 0% 0%;
+  --color-fg: 0 0% 100%;
+  --color-accent: 45 100% 70%;
+  --color-surface: 0 0% 8%;
+  --color-muted: 0 0% 60%;
+  --color-primary: 45 100% 70%;
+}
+
+[data-theme="solana"] {
+  --color-bg: 260 50% 15%;
+  --color-fg: 0 0% 95%;
+  --color-accent: 280 100% 70%;
+  --color-surface: 260 50% 20%;
+  --color-muted: 0 0% 70%;
+  --color-primary: 280 100% 70%;
+}
+
+[data-theme="base"] {
+  --color-bg: 210 100% 15%;
+  --color-fg: 0 0% 95%;
+  --color-accent: 210 100% 50%;
+  --color-surface: 210 100% 20%;
+  --color-muted: 0 0% 70%;
+  --color-primary: 210 100% 50%;
+}
+
+[data-theme="coinbase"] {
+  --color-bg: 210 100% 10%;
+  --color-fg: 0 0% 95%;
+  --color-accent: 210 100% 50%;
+  --color-surface: 210 100% 15%;
+  --color-muted: 0 0% 70%;
+  --color-primary: 210 100% 50%;
+}
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-bg text-fg font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface bg-opacity-80 backdrop-blur-sm border border-white border-opacity-10 rounded-lg shadow-card;
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface text-fg px-6 py-3 rounded-lg font-medium hover:bg-opacity-80 transition-all duration-200 border border-white border-opacity-20;
+  }
+  
+  .metric-card {
+    @apply glass-card p-4 hover:bg-opacity-15 transition-all duration-200;
+  }
+}
